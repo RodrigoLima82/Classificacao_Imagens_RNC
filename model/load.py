@@ -13,11 +13,11 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = '2'
 
 # Init Function
 def init(): 
-	json_file = open('/Users/dmpm/Dropbox/DSA/DeepLearningII/Cap07/Projeto2/model/model.json','r')
+	json_file = open('/Users/rodrigolima82/Dropbox/DataScience/FCD/FCD-MachineLearning/Cap19/Projeto/Classificacao_Imagens_RNC/model/model.json','r')
 	loaded_model_json = json_file.read()
 	json_file.close()
 	loaded_model = model_from_json(loaded_model_json)
-	loaded_model.load_weights("/Users/dmpm/Dropbox/DSA/DeepLearningII/Cap07/Projeto2/model/model.h5")
+	loaded_model.load_weights("/Users/rodrigolima82/Dropbox/DataScience/FCD/FCD-MachineLearning/Cap19/Projeto/Classificacao_Imagens_RNC/model/model.h5")
 	print("Modelo Carregado do Disco")
 
 	# Compila e Avalia o Modelo Carregado
